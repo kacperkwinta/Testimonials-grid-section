@@ -118,7 +118,7 @@ main {
 .item:nth-child(2),
 .item:nth-child(5) {
 	.profile-name {
-		color: var(--color-primary-4);
+		color: var(--color-primary-4) !important;
 	}
 
 	.paragraph-bold {
@@ -182,8 +182,13 @@ main {
 // BELOW 600 PX
 
 @media (max-width: 56.25em) {
+	
+
 	.grid {
+		margin: 2.4rem auto;
+
 		grid-template-columns: 1fr;
+		gap: 1.2rem;
 	}
 
 	.item:nth-child(1) {
